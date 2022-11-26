@@ -1,0 +1,56 @@
+[
+    {
+        "id": "0001",
+        "category": "Yardage",
+        "line": "Dragonfly Lagoon",
+        "name": "Dragonfly Lagoon Purple Swirl",
+        "available": 16,
+        "price": 9.95,
+        "cost": 4.98
+    },
+    {
+        "id": "0002",
+        "category": "Yardage",
+        "line": "Dragonfly Lagoon",
+        "name": "Dragonfly Lagoon Blue Swirl",
+        "available": 15,
+        "price": 9.95,
+        "cost": 4.98
+    },
+    {
+        "id": "0003",
+        "category": "Yardage",
+        "line": "Graphix",
+        "name": "Graphix White Boxes",
+        "available": 18,
+        "price": 11.95,
+        "cost": 5.98
+    },
+    {
+        "id": "0004",
+        "category": "Yardage",
+        "line": "Graphix",
+        "name": "Graphix Black Rectangles",
+        "available": 18,
+        "price": 11.95,
+        "cost": 5.98
+    },
+    {
+        "id": "0005",
+        "category": "Thread",
+        "line": "Glide",
+        "name": "Yellow Striker",
+        "available": 3,
+        "price": 8.95,
+        "cost": 4.48
+    },
+    {
+        "id": "0006",
+        "category": "Thread",
+        "line": "Glide",
+        "name": "Royal Shimmer",
+        "available": 6,
+        "price": 8.95,
+        "cost": 4.48
+    }
+]
