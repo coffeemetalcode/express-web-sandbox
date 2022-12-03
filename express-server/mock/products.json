@@ -2,42 +2,47 @@
     {
         "id": "0001",
         "category": "Yardage",
+        "tags": "Purple, Yardage, Print",
         "line": "Dragonfly Lagoon",
         "name": "Dragonfly Lagoon Purple Swirl",
         "available": 16,
-        "price": 9.95,
-        "cost": 4.98
+        "price": 2.49,
+        "cost": 1.25
     },
     {
         "id": "0002",
         "category": "Yardage",
+        "tags": "Blue, Yardage, Print",
         "line": "Dragonfly Lagoon",
         "name": "Dragonfly Lagoon Blue Swirl",
         "available": 15,
-        "price": 9.95,
-        "cost": 4.98
+        "price": 2.49,
+        "cost": 1.25
     },
     {
         "id": "0003",
         "category": "Yardage",
+        "tags": "Yardage, Batik, Monochrome, White",
         "line": "Graphix",
         "name": "Graphix White Boxes",
         "available": 18,
-        "price": 11.95,
-        "cost": 5.98
+        "price": 2.99,
+        "cost": 1.5
     },
     {
         "id": "0004",
         "category": "Yardage",
+        "tags": "Yardage, Batik, Monochrome, Black",
         "line": "Graphix",
         "name": "Graphix Black Rectangles",
         "available": 18,
-        "price": 11.95,
-        "cost": 5.98
+        "price": 2.99,
+        "cost": 1.5
     },
     {
         "id": "0005",
         "category": "Thread",
+        "tags": "Thread, Yellow",
         "line": "Glide",
         "name": "Yellow Striker",
         "available": 3,
@@ -47,6 +52,7 @@
     {
         "id": "0006",
         "category": "Thread",
+        "tags": "Thread, Blue",
         "line": "Glide",
         "name": "Royal Shimmer",
         "available": 6,

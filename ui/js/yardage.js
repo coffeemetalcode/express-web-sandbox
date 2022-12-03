@@ -1,33 +1,38 @@
 $(document).ready(() => {
     console.log('ready!');
 
-    function populateProducts() {
-        let products = [];
-        $.ajax({
-            url: 'http://127.0.0.1:3000/api/products',
-            type: 'GET',
-            contentType:'application/json',
-            dataType: 'json',
-            success: (data) => {
-                console.log('result', data);
-                products = data;
-            }
-        });
+    $.ajax({
+        url: 'http://127.0.0.1:3000/api/products',
+        type: 'GET',
+        contentType:'application/json',
+        dataType: 'json',
+        success: (data) => populateProducts(data)
+    });
 
-        let row = $('<tr>');
+    function populateProducts(products) {
+        console.log('products array', products);
+        
+        for (let i = 0; i < products.length; i++) { 
+            products[i] = convertYardage(products[i]);
 
-        for (let i = 0; i > products.length; i++) {
-                row.apend(`<td scope="col">${products[i].available}</td>`);
-                    /* `<td scope="col">${products[i].available}</td>
-                     <td scope="col">${products[i].name}</td>
-                     <td scope="col">${products[i].category}</td>
-                     <td scope="col">${products[i].price}</td>` */
-            
+            $("#products").append(
+                `<tr><td>${products[i].available}</td>
+                <td>${products[i].name}</td>
+                <td>${products[i].category}</td>
+                <td>${products[i].price}</td></tr>`);
         }
-
-        $("#products").append(row);
     }
 
-    populateProducts();
+    function convertYardage(product) {
+        let yardage = product.tags.includes("Yardage");
+        let converted = product;
 
+        if (yardage) {
+            converted.price = product.price * 4
+            converted.available = (product.available / 4).toFixed(2);
+        }
+
+        console.log(converted);
+        return converted;
+    }
 });
